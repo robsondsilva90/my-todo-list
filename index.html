@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <!--css-->
+    <link rel="stylesheet" href="/style.css"
+    <!--scripts-->
+    <script src="/script.js" defer></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="form-todo">
+            <p>Adicione sua Tarefa</p>
+            <div class="form-todo-control">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer :">
+                <button type="submit"><i class="fa-thin fa-plus"></i></button>
+            </div>
+        </form>
+        <form id="edit-todo-form" class="hide">
+            <p>Edite a sua tarefa</p>
+            <div class="form-todo-control">
+                <input type="text" id="edit-todo-input" />
+                <button type="submit"><i class="fa-solid fa-check-double"></i></button>
+            </div>
+            <button id="cancel-todo-edt-btn">Cancelar</button>
+        </form>
+        
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input type="text" id="search-todo-input" placeholder="Buscar">
+                    <button id="erase-todo-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter-todo">
+                <h4>Filtar:</h4>
+                <select name="" id="filter-todo-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Finalizadas</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list-all">
+            <!--<div class="todo done">
+                <h3>Estou fazendo alguma coisa...</h3>
+            <button class="finish-todo">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="edit-todo">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="delete-todo">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            </div>-->
+        </div>
+</body>
+
+</html>
